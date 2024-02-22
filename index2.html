@@ -133,9 +133,10 @@ document.addEventListener('keyup', function(event) {
 }
 }
 
-// Listen for the 'play' event on the audio element to start the warning loop
+// Listen for the 'play' event on the audio element
     document.getElementById('myAudio').addEventListener('play', function() {
-        warning(); // Call warning function when audio starts playing
+        // Delay the start of the warning loop by 2 seconds after audio starts playing
+        setTimeout(warning, 2000);
     });
 
     // Removed duplicate setTimeout calls as they are not needed with this approach
