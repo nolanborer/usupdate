@@ -253,7 +253,7 @@ text-align: center;
 }
 .support {
 font-weight: bold;
-font-size: 17px;
+font-size: 22px;
 color: #1a73e8;
 }
 #bottom {
@@ -337,7 +337,7 @@ background-color: #1a73e8;
 z-index: 999;
 padding: 10px 34px;
 color: #fff;
-font-size: 18px;
+font-size: 22px;
 height: 72px;
 }
 #footertxt, #footertxt2 {
